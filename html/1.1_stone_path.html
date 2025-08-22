@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Audio Script -->
+    <script>
+        function openPlayer() {
+            if (!window.playerWindow || window.playerWindow.closed) {
+                window.playerWindow = window.open(
+                    "../music/player.html",    // This is a separate file containing your audio
+                    "MusicPlayer",
+                    "width=300,height=100"
+                );
+            }
+        }
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Path</title>
+    <style>
+        body {
+            color: wheat;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            list-style-position: inside
+        }
+
+        h1 {
+            color: darkorange;
+            text-align: center;
+        }
+
+        h2 {
+            color: orange;
+            text-align: center;
+        }
+
+        a:link {
+            color: aqua;
+            text-decoration: none
+        }
+
+        a:visited {
+            color: pink;
+            text-decoration: none
+        }
+
+        a:hover {
+            color: tomato;
+            text-decoration: underline
+        }
+
+        a:active {
+            color: yellow;
+            text-decoration: underline
+        }
+
+        iframe {
+            flex: 1;
+            width: 100%;
+            border: none;
+        }
+    </style>
+</head>
+
+<body style="background-color: black;">
+    <h1>Stone Path</h1>
+
+    <h2>Story:</h2>
+    <p>
+        "Holding the stone, you feel its energy course through you. Visions arise: past lives, hidden fears, and
+        forgotten strengths. You must choose to <b>confront</b> or <b>release</b> the visions"
+    </p>
+
+    <h2>Choices:</h2>
+    <ul>
+        <li><b>Confront </b><a href="./1.1.1_ending_visions_confronted.html">the visions</a></li>
+        <li><b>Release </b><a href="./1.1.2_ending_visions_released.html">the visions</a></li>
+    </ul>
+    <img src="../Pictures/1.1_stone.jpeg" width="1024" alt="Stone">
+</body>
+
+</html>

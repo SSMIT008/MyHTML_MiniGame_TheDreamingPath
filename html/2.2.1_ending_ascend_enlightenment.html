@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Audio Script -->
+    <script>
+        function openPlayer() {
+            if (!window.playerWindow || window.playerWindow.closed) {
+                window.playerWindow = window.open(
+                    "../music/player.html",    // This is a separate file containing your audio
+                    "MusicPlayer",
+                    "width=300,height=100"
+                );
+            }
+        }
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascent into Enlightenment</title>
+    <style>
+        body {
+            color: wheat;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            list-style-position: inside
+        }
+
+        h1 {
+            color: darkorange;
+            text-align: center;
+        }
+
+        h2 {
+            color: orange;
+            text-align: center;
+        }
+
+        a:link {
+            color: aqua;
+            text-decoration: none
+        }
+
+        a:visited {
+            color: pink;
+            text-decoration: none
+        }
+
+        a:hover {
+            color: tomato;
+            text-decoration: underline
+        }
+
+        a:active {
+            color: yellow;
+            text-decoration: underline
+        }
+
+        iframe {
+            flex: 1;
+            width: 100%;
+            border: none;
+        }
+    </style>
+</head>
+
+<body style="background-color: black;">
+    <h1>🌟 Ascent into Enlightenment</h1>
+
+    <h2>Winning Ending:</h2>
+    <p>
+        "You climb the ancient tree, higher and higher, until the crown touches the sky. From above, you see threads of
+        energy weaving the world into one. There is no more fear, only the endless path. You have gained vision and
+        clarity"
+    </p>
+
+    <img src="./../Pictures/2.2.1_ascend_top_tree.jpeg" width="1024" alt="TopTree">
+
+    <p>
+        <a href="./../index.html"><b>Return To Beginning</b></a>
+    </p>
+
+</body>
+
+</html>

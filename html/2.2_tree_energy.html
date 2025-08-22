@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Audio Script -->
+    <script>
+        function openPlayer() {
+            if (!window.playerWindow || window.playerWindow.closed) {
+                window.playerWindow = window.open(
+                    "../music/player.html",    // This is a separate file containing your audio
+                    "MusicPlayer",
+                    "width=300,height=100"
+                );
+            }
+        }
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree Energy</title>
+    <style>
+        body {
+            color: wheat;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            list-style-position: inside
+        }
+
+        h1 {
+            color: darkorange;
+            text-align: center;
+        }
+
+        h2 {
+            color: orange;
+            text-align: center;
+        }
+
+        a:link {
+            color: aqua;
+            text-decoration: none
+        }
+
+        a:visited {
+            color: pink;
+            text-decoration: none
+        }
+
+        a:hover {
+            color: tomato;
+            text-decoration: underline
+        }
+
+        a:active {
+            color: yellow;
+            text-decoration: underline
+        }
+
+        iframe {
+            flex: 1;
+            width: 100%;
+            border: none;
+        }
+    </style>
+</head>
+
+<body style="background-color: black;">
+    <h1>Tree Energy</h1>
+
+    <h2>Story:</h2>
+    <p>
+        "You touch the tree. Its energy floods your senses. The world appears alive and interconnected. You feel fear
+        and exhilaration. Will you <b>ascend</b> or <b>descend</b>?"
+    </p>
+
+    <h2>Choices:</h2>
+    <ul>
+        <li>Ascend the <a href="./2.2.1_ending_ascend_enlightenment.html"><b>tree</b></a></li>
+        <li>Descend into <a href="./2.2.2_ending_descend_depths.html"><b>roots</b></a></li>
+    </ul>
+    <img src="../Pictures/2.2_tree.jpeg" width="1024" alt="Tree">
+</body>
+
+</html>

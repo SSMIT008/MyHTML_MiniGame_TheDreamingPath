@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Audio Script -->
+    <script>
+        function openPlayer() {
+            if (!window.playerWindow || window.playerWindow.closed) {
+                window.playerWindow = window.open(
+                    "../music/player.html",    // This is a separate file containing your audio
+                    "MusicPlayer",
+                    "width=300,height=100"
+                );
+            }
+        }
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stream Reflection</title>
+    <style>
+        body {
+            color: wheat;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            list-style-position: inside
+        }
+
+        h1 {
+            color: darkorange;
+            text-align: center;
+        }
+
+        h2 {
+            color: orange;
+            text-align: center;
+        }
+
+        a:link {
+            color: aqua;
+            text-decoration: none
+        }
+
+        a:visited {
+            color: pink;
+            text-decoration: none
+        }
+
+        a:hover {
+            color: tomato;
+            text-decoration: underline
+        }
+
+        a:active {
+            color: yellow;
+            text-decoration: underline
+        }
+
+        iframe {
+            flex: 1;
+            width: 100%;
+            border: none;
+        }
+    </style>
+</head>
+
+<body style="background-color: black;">
+    <h1>Stream Reflection</h1>
+
+    <h2>Story:</h2>
+    <p>
+        "Looking into the stream, your reflection shifts. You see a stranger, a friend, and yourself all at once. You
+        can <b>dive</b> into the water to explore this inner realm, or <b>meditate</b> by the shore"
+    </p>
+
+    <h2>Choices:</h2>
+    <ul>
+        <li><b>Dive</b> <a href="./2.1.1_ending_inner_realm.html">into the water</a></li>
+        <li><b>Meditate</b> <a href="./2.1.2_ending_shore_meditation.html">by the shore</a></li>
+    </ul>
+    <img src="../Pictures/2.1_steam.jpeg" width="1024" alt="Steam">
+</body>
+
+</html>

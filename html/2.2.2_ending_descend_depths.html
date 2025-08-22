@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Audio Script -->
+    <script>
+        function openPlayer() {
+            if (!window.playerWindow || window.playerWindow.closed) {
+                window.playerWindow = window.open(
+                    "../music/player.html",    // This is a separate file containing your audio
+                    "MusicPlayer",
+                    "width=300,height=100"
+                );
+            }
+        }
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descent into the Depths</title>
+    <style>
+        body {
+            color: wheat;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            list-style-position: inside
+        }
+
+        h1 {
+            color: darkorange;
+            text-align: center;
+        }
+
+        h2 {
+            color: orange;
+            text-align: center;
+        }
+
+        a:link {
+            color: aqua;
+            text-decoration: none
+        }
+
+        a:visited {
+            color: pink;
+            text-decoration: none
+        }
+
+        a:hover {
+            color: tomato;
+            text-decoration: underline
+        }
+
+        a:active {
+            color: yellow;
+            text-decoration: underline
+        }
+
+        iframe {
+            flex: 1;
+            width: 100%;
+            border: none;
+        }
+    </style>
+</head>
+
+<body style="background-color: black;">
+    <h1>🌑 Descent into the Depths</h1>
+
+    <h2>Losing Ending:</h2>
+    <p>
+        "You descend into the dark roots of the ancient tree. The soil is heavy, the air suffocating. Shadows tighten
+        around you, and the roots entangle your body and mind. Consciousness sinks into endless sleep. You are consumed
+        by darkness"
+    </p>
+
+    <img src="./../Pictures/2.2.2_descend_roots_under_tree.jpeg" width="1024" alt="UnderTree">
+
+    <p>
+        <a href="./../index.html"><b>Return To Beginning</b></a>
+    </p>
+
+</body>
+
+</html>
