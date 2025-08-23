@@ -2,67 +2,12 @@
 <html lang="en">
 
 <head>
-    <!-- Audio Script -->
-    <script>
-        function openPlayer() {
-            if (!window.playerWindow || window.playerWindow.closed) {
-                window.playerWindow = window.open(
-                    "./music/player.html",    // This is a separate file containing your audio
-                    "MusicPlayer",
-                    "width=300,height=100"
-                );
-            }
-        }
-        openPlayer(); // Auto-open when page loads
-    </script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Dreaming Path: Beginning</title>
-    <style>
-        body {
-            color: wheat;
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
-            list-style-position: inside
-        }
-
-        h1 {
-            color: darkorange;
-            text-align: center;
-        }
-
-        h2 {
-            color: orange;
-            text-align: center;
-        }
-
-        a:link {
-            color: aqua;
-            text-decoration: none
-        }
-
-        a:visited {
-            color: pink;
-            text-decoration: none
-        }
-
-        a:hover {
-            color: tomato;
-            text-decoration: underline
-        }
-
-        a:active {
-            color: yellow;
-            text-decoration: underline
-        }
-
-        iframe {
-            flex: 1;
-            width: 100%;
-            border: none;
-        }
-    </style>
+    <link rel="stylesheet" href="./configuration/styles.css">
+    <script src="./configuration/openPlayer.js"></script>
+    <button onclick="openPlayer()">Open Player</button>
 </head>
 
 <body style="background-color: black;">
